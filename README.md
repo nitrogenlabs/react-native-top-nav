@@ -18,23 +18,3 @@ or
 ```bash
 $ yarn add @nlabs/react-native-top-nav
 ```
-
-### Usage
-
-```javascript
-import {ImageGallery} from '@nlabs/react-native-image-gallery';
-
-class Images extends React.PureComponent {
-  render() {
-    const {images} = this.props;
-    const imageUrls = images.map((img) => ({
-        url: img.uri,
-        id: img.id,
-        title: img.title,
-        description: img.description
-      })
-    );
-    return <ImageGallery images={imageUrls} />;
-  }
-}
-```
